@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1789835759666,
+      "tag": "0000_trendlens_profiles_and_reports",
+      "breakpoints": true
+    }
+  ]
+}
