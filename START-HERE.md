@@ -1,6 +1,6 @@
 # TrendLens: independent deployment
 
-Lovable is optional as an editor. This app can run on Vercel with Supabase, Gemini and SerpApi. Keeping the existing Lovable build package does not require using the Lovable editor.
+This app runs independently on Vercel with Supabase, Gemini and SerpApi. Its build uses standard Vite, TanStack Start and Nitro plugins.
 
 ## Vercel import settings
 

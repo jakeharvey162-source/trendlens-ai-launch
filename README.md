@@ -8,7 +8,7 @@ Start with [HANDOFF.md](HANDOFF.md) for exact variables, deployment steps, verif
 
 ## Run
 
-The new Source Explorer lets users search references, filter publishers and attributed claims, open original sources, and export an evidence pack. See [GITHUB-SYNC.md](GITHUB-SYNC.md) to apply this package to the existing Lovable-connected repository.
+The Source Explorer lets users search references, filter publishers and attributed claims, open original sources, and export an evidence pack. See [START-HERE.md](START-HERE.md) to deploy this independent repository on Vercel.
 
 Use Node 24:
 
