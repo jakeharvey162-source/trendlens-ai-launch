@@ -26,7 +26,7 @@ The paused project was restored. These migrations have already been applied ther
 - supabase/migrations/20260919233704_trendlens_live.sql
 - supabase/migrations/20260919234840_repair_legacy_auth.sql
 
-The app uses trendlens_reports, trendlens_jobs and trendlens_usage. It does not use the old Lovable reports/profiles tables. No original Lovable data was deleted or migrated. Existing data stays in its original project.
+The app uses trendlens_reports, trendlens_jobs and trendlens_usage. It does not use the legacy reports/profiles tables. No original data was deleted or migrated. Existing data stays in its original project.
 
 The target contained no public tables but retained old authentication functions. Its signup trigger referenced a nonexistent user_profiles table. It now skips that missing legacy table; if the table exists later, it assigns only the fixed user role. The legacy is_admin helper now reads server-controlled app metadata only. Search paths and public function access were restricted.
 
@@ -50,7 +50,7 @@ Use the values in VERCEL-ENV.txt or .env.example. Four connection values are alr
 
 Add private keys directly to Vercel's environment-variable settings. Do not commit them or paste them into the chat. Deleting a message does not rotate a key. No private keys are included in this package.
 
-Provider billing/quota must be available. No Lovable gateway key is required. A Supabase personal access token or database password is not the service-role key.
+Provider billing/quota must be available. A Supabase personal access token or database password is not the service-role key.
 
 ## Deploy from the updated code
 
@@ -115,7 +115,7 @@ The optional browser script uses playwright-core. Install it separately or set B
 
 ### Source Explorer upgrade
 
-Reports now include a Source Explorer with keyword, publisher and attributed-claim filters, original publication links, and filtered Markdown exports. Demo references are labelled illustrative. Report compilation times are not presented as source publication dates. These controls make attribution inspectable but do not independently verify claims. See GITHUB-SYNC.md for the existing Lovable repository update workflow.
+Reports now include a Source Explorer with keyword, publisher and attributed-claim filters, original publication links, and filtered Markdown exports. Demo references are labelled illustrative. Report compilation times are not presented as source publication dates. These controls make attribution inspectable but do not independently verify claims. See GITHUB-SYNC.md for the GitHub deployment workflow.
 
 - Gemini model: https://ai.google.dev/gemini-api/docs/models/gemini-2.5-flash
 - Supabase SMTP: https://supabase.com/docs/guides/auth/auth-smtp

@@ -25,9 +25,7 @@ import { useTheme } from "@/lib/theme";
 export function Brand({ compact = false }: { compact?: boolean }) {
   return (
     <Link to="/" className="group flex items-center gap-3" aria-label="TrendLens AI home">
-      <span className="relative grid size-8 place-items-center overflow-hidden rounded-md border border-primary/30 bg-primary/10">
-        <span className="h-3 w-3 rotate-45 border border-primary transition-transform duration-500 group-hover:rotate-[135deg]" />
-      </span>
+      <img src="/trendlens-icon.svg" alt="" width={32} height={32} className="size-8 rounded-md" />
       {!compact && (
         <span className="text-[15px] font-semibold tracking-tight text-foreground">
           TrendLens <span className="text-primary">AI</span>
